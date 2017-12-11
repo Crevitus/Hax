@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Hax</string>
+
+    <string-array name="listArray">
+        <item>Coarse Grained Permission: Storage Group</item>
+        <item>Permission Escalation: Overt Attack (SMS Send)</item>
+        <item>Permission Escalation: Covert Collusion (Ringer Mode)</item>
+        <item>Denial of Service (Call Intent)</item>
+    </string-array>
+    <string name="title_activity_demo">Application Demo</string>
+    <string name="title_activity_coarse_grained">Coarse Grained Permissions</string>
+    <string name="title_activity_escalation">Overt Attack</string>
+    <string name="title_activity_collusion">Covert Collusion</string>
+    <string name="title_activity_dos">Denial of Call Intent</string>
+
+    <string name="btn_read_file">Open Test Image</string>
+
+    <string name="DoS">PREF_DOS</string>
+    <string name="txt_file_list">File List:</string>
+    <string name="txt_execution_list">Execution List:</string>
+    <string name="edt_data_to_send_hint">String to send</string>
+    <string name="btn_data_share">Initiate Data Share</string>
+    <string name="txt_abort_call_intent">Abort call intents:</string>
+    <string name="btn_dos_demo">Demo DoS Call Intent</string>
+    <string name="edt_sms_number_hint">Enter Phone Number</string>
+    <string name="edt_sms_message_hint">Enter SMS message</string>
+    <string name="btn_send_sms">Send SMS</string>
+    <string name="btn_demo">Run Demo</string>
+    <string name="preference_file_key">com.crevitus.hax.PREF_KEY_NAME</string>
+    <string name="request_read_permission"><![CDATA[>> Requesting read storage permissions…]]></string>
+    <string name="read_permissions_granted"><![CDATA[>> Read storage permissions already granted.]]></string>
+    <string name="request_write_permission"><![CDATA[>> Requesting write storage permissions…]]></string>
+    <string name="write_permissions_granted"><![CDATA[>> Write storage permissions automatically granted by system.]]></string>
+    <string name="read_test_image"><![CDATA[>> Reading test image…]]></string>
+    <string name="delete_file_message"><![CDATA[>> Deleting test file…]]></string>
+    <string name="create_file_message"><![CDATA[>> Creating test file for next demo…]]></string>
+    <string name="number">07480826112</string>
+    <string name="target_package">com.crevitus.haxdeputy</string>
+    <string name="target_action">com.crevitus.sendSMS</string>
+    <string name="list_file_message"><![CDATA[>> Listing files in directory…]]></string>
+    <string name="txt_main_title">Exploits:</string>
+</resources>

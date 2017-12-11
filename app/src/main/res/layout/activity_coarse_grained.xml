@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoarseGrainedActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <Button
+        android:id="@+id/btnReadFile"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_read_file"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/txtFileList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b5ccf6"
+        android:textColor="#282828"
+        android:text="@string/txt_file_list"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/btnReadFile"/>
+    <TextView
+        android:id="@+id/txtExecutionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b7bcc7"
+        android:textColor="#0a7e2b"
+        android:text="@string/txt_execution_list"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/txtFileList"/>
+
+    <ImageView android:id="@+id/imageView"
+        android:layout_below="@+id/txtExecutionList"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter">
+    </ImageView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoSActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sSwitch"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/sSwitch"
+        android:layout_alignTop="@+id/sSwitch"
+        android:id="@+id/txtDoSLabel"
+        android:text="@string/txt_abort_call_intent"
+        android:textSize="24sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_dos_demo"
+        android:id="@+id/btnDemo"
+        android:layout_below="@+id/sSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

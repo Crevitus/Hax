@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EscalationActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNumber"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:hint="@string/edt_sms_number_hint"
+        android:inputType="phone"
+        android:textColorHint="#676464"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSMSMessage"
+        android:layout_below="@+id/edtNumber"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textColorHint="#676464"
+        android:hint="@string/edt_sms_message_hint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_send_sms"
+        android:id="@+id/btnSendSMS"
+        android:layout_below="@+id/edtSMSMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+</RelativeLayout>
